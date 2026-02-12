@@ -1,9 +1,12 @@
 name: Ninth Workflow
 on:
   repository_dispatch:
-    types:
-        [test]
+    types: [test]
 
+permissions:
+  contents: read
+  pull-requests: write
+  actions: write
 
 jobs:
     run-first-command:
